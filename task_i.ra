@@ -1,0 +1,16 @@
+\project_{pizzeria} (
+                    \select_{pizza='pepperoni'} Serves)
+                 \diff
+                 \project_{pizzeria} (
+                     \select_{price>price2} (
+                         \project_{pizzeria,price} (
+                             \select_{pizza='pepperoni'} Serves
+                         )
+                         \cross
+                         \rename_{pizzeria2,price2}
+                             \project_{pizzeria,price} (
+                                 \select_{pizza='pepperoni'} Serves
+                             )
+                    )
+                 );
+             

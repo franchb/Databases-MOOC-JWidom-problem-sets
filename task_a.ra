@@ -1,0 +1,5 @@
+\project_{pizzeria} (
+                    \select_{age<18} Person 
+                    \join Frequents
+                );
+             

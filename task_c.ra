@@ -1,0 +1,11 @@
+\project_{name} (
+                   \select_{gender='female' and pizza='mushroom'}
+                       (Person \join Eats)
+                 )
+                 \intersect
+                 \project_{name} (
+                   \select_{gender='female' and pizza='pepperoni'}
+                       (Person \join Eats)
+                 )
+                ;
+             

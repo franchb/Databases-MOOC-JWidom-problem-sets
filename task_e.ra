@@ -1,0 +1,13 @@
+\project_{pizzeria} (
+                    \select_{gender='male'} (Person \join Frequents)
+                    \diff
+                    \select_{gender='female'} (Person \join Frequents)
+                 )
+                 \intersect
+                 \project_{pizzeria} (
+                    \select_{gender='female'} (Person \join Frequents)
+                    \diff
+                    \select_{gender='male'} (Person \join Frequents)
+                 ) 
+                ;
+             

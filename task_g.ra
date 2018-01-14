@@ -1,0 +1,11 @@
+\project_{name} (Person)
+                 \diff (
+                     \project_{name} (
+                     Frequents
+                     \diff
+                     \project_{name, pizzeria} (
+                          Eats
+                          \join
+                          Serves
+                      )));
+             
